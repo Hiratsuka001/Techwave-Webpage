@@ -360,7 +360,119 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-/* featured episodes section */
-/* featured episodes section */
-/* featured episodes section */
-/* featured episodes section */
+
+/* Featured Episodes Section */
+/* Featured Episodes Section */
+/* Featured Episodes Section */
+/* Featured Episodes Section */
+/* Featured Episodes Section */
+
+.featured-episodes {
+  background-color: #1a0b2e;
+  padding: 120px 200px;
+  text-align: center;
+  color: white;
+}
+
+.episodes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 60px;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.episode-card {
+  background-color: #230e3d;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.episode-card:hover {
+  transform: translateY(-8px);
+}
+
+.episode-thumbnail {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.episode-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(
+    50deg,
+    rgba(247, 233, 63, 1) 10%,
+    rgba(251, 9, 180, 1) 50%,
+    rgba(145, 0, 248, 1) 100%
+  );
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.episode-card:hover .play-button {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-button i {
+  color: white;
+  font-size: 20px;
+  margin-left: 3px;
+}
+
+.episode-content {
+  padding: 24px;
+}
+
+.episode-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: white;
+  line-height: 1.4;
+}
+
+.episode-content p {
+  color: #b0a9b8;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.episode-duration {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 500;
+}
+
+.duration-icon {
+  color: #00ff85;
+}
+
+/* Meet the host section */
+/* Meet the host section */
+/* Meet the host section */
+/* Meet the host section */
