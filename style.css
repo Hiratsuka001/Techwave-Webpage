@@ -147,13 +147,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 120px;
-  /* animation: rotate 3s linear infinite; */
-}
-
-@keyframes rotate {
-  100% {
-    transform: translate(-50%, -50%) rotate(360deg);
-  }
 }
 
 .banner-title {
@@ -214,6 +207,110 @@ body {
 .btn-subscribe:hover {
   transform: scale(1.05);
   background-color: #000000;
+}
+/* responsive navbar and banner section */
+/* responsive navbar and banner section */
+/* responsive navbar and banner section */
+/* responsive navbar and banner section */
+/* responsive navbar and banner section */
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 16px 20px;
+    height: 60px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .navbar .subscribe-btn {
+    display: none;
+  }
+
+  .navbar::after {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("assets/hamburger-menu.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  /* Banner */
+  /* Banner */
+  /* Banner */
+  /* Banner */
+  .banner {
+    height: auto;
+    min-height: 466px;
+    padding: 40px 20px;
+  }
+
+  .banner-content {
+    max-width: 100%;
+  }
+
+  .new-badge {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+  }
+
+  .banner-container {
+    width: 280px;
+    height: 280px;
+    margin-bottom: 24px;
+  }
+
+  .circle {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mic {
+    width: 70px;
+  }
+
+  .banner-title {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+  }
+
+  .banner-subtitle {
+    font-size: 1rem;
+    max-width: 100%;
+    margin-bottom: 24px;
+    padding: 0 10px;
+  }
+
+  .banner-actions {
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .btn-spotify,
+  .btn-subscribe {
+    padding: 12px 20px;
+    font-size: 0.8rem;
+    max-width: 180px;
+    justify-content: center;
+  }
+
+  .btn-spotify img,
+  .btn-subscribe img {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 /* about section */
